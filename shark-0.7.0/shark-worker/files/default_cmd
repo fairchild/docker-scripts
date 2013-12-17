@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # run this as:
-#    sudo docker run -d shark-worker:${SHARK_VERSION} ${MASTER_IP} spark://${MASTER_IP}:7077
+#    sudo docker run -P=true  -d shark-worker:${SHARK_VERSION} ${MASTER_IP} spark://${MASTER_IP}:7077
 
 source /root/shark_files/configure_shark.sh
 

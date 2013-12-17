@@ -83,7 +83,7 @@ logfile $OUTFILE
 EOF
     cat > cmd.sh <<EOF
 #!/bin/bash
-sudo docker run -i -dns $NAMESERVER_IP ${service}-shell:${version} $MASTER_IP
+sudo docker run -P=true  -i -dns $NAMESERVER_IP ${service}-shell:${version} $MASTER_IP
 EOF
     sleep 3
     chmod u+x cmd.sh
